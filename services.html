@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picography webdesign</title>
+    <link rel="Stylesheet" href="st.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+    />
+    <link
+      rel="Stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo-1.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="in.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>SERVICES</h1>
+    </section>
+
+    <!----Services---->
+    <section class="course">
+      <h1>Courses</h1>
+      <p>
+        There’s always more to learn when you explore photography. As you dive into these Skillshare classes, you can learn about a wide variety of photography techniques, tools, and topics, from selecting lenses and lighting, to composition, editing and color grading. 
+
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Diploma</h3>
+          <p>
+            Getting Started — What do you want to shoot?<br>
+            Camera Basics — Start taking control<br>
+            Your view of the world through your camera<br>
+            Composition — Start seeing as a photographer<br>
+            Shutter Speeds — Adding dynamic movement to your photography
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Capturing better portraits<br>
+            Shooting landscapes<br>
+            Importance of colour<br>
+            Seeing in black and white<br>
+            Photography in lowlight and at night<br>
+            Macro photography — get closer!<br>
+            Food photography — photos good enough to eat!<br>
+            Photographing wildlife
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Advanced</h3>
+          <p>
+            Histograms: Measuring tones and exposure<br>
+            Metering modes - change how you see light<br>
+            Lens Filters - A Guide<br>
+            HDR Photography<br>
+            Flash Photography Part 1<br>
+            Flash Photography Part 2<br>
+            Studio Lighting Part 1<br>
+            Studio Lighting Part 2
+          </p>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-----Facilities----->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Everything you need to improve 'photographer' confidence and build on your creative knowledge is included!
+      </p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library2.jpg" alt="facilities" />
+          <h3>Library</h3>
+          <p>
+            It can be difficult to memorise specific details when learning a new skill. That's why we designed this eBook to complement our "An Introduction to Photography" course. It contains helpful diagrams, further explanations, and direct links to relevant free video classes to help accelerate your progress.
+            As the important facts become second nature you'll gain confidence and start to feel more instinctive every time you head out with your camera.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/faculty1.jpg" alt="facilities" />
+          <h3>Highly Qualified Faculties</h3>
+          <p>
+           It's been a great privilege to help hundreds of thousands of people improve their photography. Through this free online photography training, I hope to continue to educate and inspire.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/camera1.jpg" alt="facilities" />
+          <h3>Top Rated Cameras</h3>
+          <p>
+            There are countless courses on using your DSLR camera or using photo editing tools like Adobe Lightroom, Lightroom Mobile and Photoshop. In these helpful classes, broken down into short lessons, you can create and share hands-on projects, and get useful feedback from a community of creators.
+          </p>
+        </div>
+      </div>
+    
+      <!----Comment Form----->
+      <div class="comt">
+        <h3>Leave a comment</h3>
+        <form class="comt-form">
+          <input type="text" placeholder="enter name" />
+          <input type="email" placeholder="enter email" />
+          <textarea row="5" placeholder="Comment"></textarea>
+          <button type="Submit" class="hero">Post comment</button>
+        </form>
+      </div>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        While there are plenty of self-proclaimed “photography experts” online, <br>the majority aren’t able to produce even average images without extensive retouching — and you definitely won’t see them shooting live and sharing their results in real-time.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+      <p>Designed By<i class="fa fa-heart-o"></i>Subhasree</p>
+    </section>
+
+    <!-----javascript---->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/311bbea884.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
