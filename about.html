@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Picography webdesign</title>
+    <link rel="Stylesheet" href="st.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+    />
+    <link
+      rel="Stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"/>
+    <style>  
+      #accordion-5{font-size: 14px;}  
+   </style>    
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo-1.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="in.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>ABOUT US</h1>
+    </section>
+
+      <!------About Us----->
+    <section class="about">
+      <dic class="row">
+        <div class="about-col">
+          <h2>We have taken great steps for you to be successful</h2>
+          <p>
+            Picography offers a wide range of online photography courses and editing courses that are designed for beginner and amateur photographers.
+
+            Its popular flagship course, Picography Course, is an in-depth 18-module course covering all the essentials of photography from the basics like camera settings, equipment, light, through to advanced posing, composition, camera tricks and editing in Photoshop.
+
+            Each course comes with a Certificate of Achievement, practical tutor-assessed assignments and access to an active community which includes photo contests and a photo feedback gallery that receives over 3,000 uploads a month. Students can upload their photos and receive feedback and ratings from tutors and fellow students.
+
+            Picography also offers a free photography course called The 30-Day Photographer which delivers a new class each day for 30 days. Each class takes less than 60-seconds to complete and teaches the basic principles of photography.While there are plenty of self-proclaimed “photography experts” online, <br>the majority aren’t able to produce even average images without extensive retouching — and you definitely won’t see them shooting live and sharing their results in real-time.
+          </p>
+          <a href="" class="hero">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/library.png" alt="abput" />
+        </div>
+      </dic>
+    </section>
+    <section class="u">
+      <div id="accordion-5">  
+        <h3>Where and when courses are held?</h3>  
+           <div>  
+              <p>  
+                All our courses are delivered via video classes at your scheduled times. You will receive email reminders prior to the class and times will be in your local time. You can join via links in the reminder emails or via your Upskillist website.
+              </p>  
+           </div>  
+           <h3>Who do I contact with questions related to my course?</h3>  
+           <div>  
+              <p>  
+                During the webinars, you can ask questions and receive answers in real time. If you do have any outstanding questions after the class has finished.
+
+                We remain available as a point of support and assistance even after the webinars have concluded.  
+              </p>  
+           </div>  
+           <h3>What is the duration of my course?</h3>  
+           <div>  
+              <p>  
+                Our courses generally have 4 modules, where each module has 8 classes. Some of the courses may be shorter to 3 or 2 modules. We continuously develop new content and partially release courses to give our students a taste of what is to come.      
+              </p>  
+                
+           </div>  
+         <h3>Are there any assignments in my course?</h3>  
+             <div>  
+              <p>
+                Yes, there are ‘weekly assignments’ after every 2nd class to test your knowledge. The weekly assignments are optional, and completion is not compulsory to obtain your diploma. They are in the format of multiple-choice questions. There is also an End of Module Assignment at the end of each Module. Upon course completion and completing all 4 module assignments, you can get an e-Diploma via our Customer Services team. There will also be an option to purchase a hardcopy diploma. 
+              </p>
+ </div>  
+ 
+        </div>  
+        <div style="margin-top:30px">  
+           <input type="radio" name="disable" id="disableaccordion"    
+              value="disable">Disable accordion  
+           <input type="radio" name="disable" id="enableaccordion" checked   
+              value="enable">Enable accordion  
+        </div>  
+    </section>
+
+    <!------Footer----->
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        While there are plenty of self-proclaimed “photography experts” online, <br>the majority aren’t able to produce even average images without extensive retouching — and you definitely won’t see them shooting live and sharing their results in real-time.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+      <p>Designed By<i class="fa fa-heart-o"></i>Subhasree</p>
+    </section>
+
+    <!----Javascript----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/311bbea884.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+      <script>  
+         $(function() {  
+            $( "#accordion-5" ).accordion({  
+               disabled: false  
+            });  
+            $("input").each(function () {  
+               $(this).change(function () {  
+                  if ($(this).attr("id") == "disableaccordion") {  
+                     $("#accordion-5").accordion("option", "disabled", true);  
+                  } else {  
+                     $("#accordion-5").accordion("option", "disabled", false);  
+                  }  
+               });  
+            });  
+         });  
+      </script>  
+      
+</html>
